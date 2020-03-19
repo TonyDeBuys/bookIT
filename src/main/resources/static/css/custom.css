@@ -38,18 +38,26 @@
 .headerOptions {
 	padding-top: 4px;
 	padding-bottom:6px;
-	height: 32px; 
 	background-color: #1d7daf;
 	color: #ffffff;
 	
     font-family: inherit;
 	font-size: 12pt;
+	
+	border-bottom: 2px solid #777777;
 }
 
+.headerOptions a:hover {
+	border-bottom: 8px solid #777777;
+}
+	
 .headerOptions a {
-    color: #777;
+    color: #ffffff;
 	font-size: 14px;
 	text-decoration: none;
+	
+	padding-left: 8px;
+	padding-right: 8px;
 }
 
 .dropdown-menu {
