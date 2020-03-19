@@ -20,6 +20,7 @@ public class SpringWebConfig extends WebMvcConfigurationSupport {
 
 	public final static String[] WEB_RESOURCES = {"css/",
 									              "font/",
+									              "font-awesome/",
 									              "img/",
 									              "js/",
 									        	  "scss/"
