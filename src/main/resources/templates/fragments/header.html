@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head></head>
+
+<body>
+	
+	<!-- Start: Header fragment -->
+	<div th:fragment="header" th:remove="tag">
+	
+		<div class="header">
+			<div class="row headerBar">
+				<div>
+					<span id="headerTitle" class="headerTitle">bookIT</span>
+				</div>
+				<div class="headerProfile">
+					<div class="dropdown show">
+						<a class="dropdown-toggle" 
+					       href="#" role="button"
+					       id="dropdownProfileMenuLink" 
+					       data-toggle="dropdown" 
+					       aria-haspopup="true" 
+					       aria-expanded="false"
+					       style="text-decoration: none;"
+					       onclick="_g_initializeProvidersSubMenu()">
+							<i class="far fa-user-circle" style="padding-right: 4px"></i>
+							<span id="profilePanel">username</span>
+						</a>
+						
+						<div class="dropdown-menu" aria-labelledby="dropdownProfileMenuLink">
+							<a class="dropdown-item" th:href="@{'/profile'}">Profile</a>
+							<a class="dropdown-item" href="#">Menu option 1</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" onclick="logout()">Logout</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-12 headerOptions">
+					<table width="100%">
+						<tr>
+							<td>
+								Venues
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								Bookings
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								Inventory
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								Workflows
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								Reports
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								Setup
+								&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td class="pull-right">
+								&nbsp;
+							</td>						
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- End: Header fragment -->
+	
+</body>
+</html>

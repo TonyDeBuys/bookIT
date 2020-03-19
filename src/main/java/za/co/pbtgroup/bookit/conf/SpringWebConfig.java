@@ -18,21 +18,11 @@ import za.co.pbtgroup.bookit.Constants;
 @Configuration
 public class SpringWebConfig extends WebMvcConfigurationSupport {
 
-	public final static String[] WEB_RESOURCES = {"bootstrap/",
-									              "chartjs/",
-									              "gui/",
-									              "css/",
-									        	  "datatables/",
-									        	  "datepicker/",
-									        	  "font-awesome/",
-									        	  "img/",
-									        	  "jqTree/",
-									        	  "jquery/",
-									        	  "jquery-ui/",
-									        	  "js/",
-									        	  "viz/",
-									        	  "nicEdit/",
-									        	  "popper/"
+	public final static String[] WEB_RESOURCES = {"css/",
+									              "font/",
+									              "img/",
+									              "js/",
+									        	  "scss/"
 									             };
 
 	@Override
